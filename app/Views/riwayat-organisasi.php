@@ -53,3 +53,7 @@ Riwayat Organisasi
         </div>
     </div>
 <?= $this->endSection() ?>
+
+<?= $this->section('script') ?>
+$(".menu li:eq(1)").addClass("active");
+<?= $this->endSection() ?>

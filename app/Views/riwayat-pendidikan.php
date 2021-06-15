@@ -48,3 +48,7 @@ Riwayat Pendidikan
         </div>
     </div>
 <?= $this->endSection() ?>
+
+<?= $this->section('script') ?>
+$(".menu li:first").addClass("active");
+<?= $this->endSection() ?>

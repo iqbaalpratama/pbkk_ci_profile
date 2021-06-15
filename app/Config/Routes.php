@@ -35,6 +35,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/riwayat-pendidikan', 'Home::pendidikan');
 $routes->get('/riwayat-organisasi', 'Home::organisasi');
+$routes->get('/kelola-data-mahasiswa', 'MahasiswaController::index');
+$routes->get('/kelola-data-mahasiswa/create', 'MahasiswaController::create');
+$routes->post('/kelola-data-mahasiswa/store', 'MahasiswaController::store');
+$routes->post('/kelola-data-mahasiswa/update', 'MahasiswaController::update');
+$routes->post('/kelola-data-mahasiswa/delete', 'MahasiswaController::delete');
 
 /*
  * --------------------------------------------------------------------
